@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection"/>
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt Task" max_length="40" name="x_58872_needit_needit_task" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="New Choice" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="0" value="open"/>
+                <element inactive_on_update="false" label="Work in progress" sequence="1" value="work in progress"/>
+                <element inactive_on_update="false" label="Closed complete" sequence="2" value="closed complete"/>
+                <element inactive_on_update="false" label="Closed incomplete" sequence="3" value="closed incomplete"/>
+            </choice>
+        </element>
+    </element>
 </database>
